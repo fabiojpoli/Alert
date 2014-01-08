@@ -39,6 +39,8 @@ Ext.define('Ext.ux.Alert', {
 
 		msgBox = Ext.core.DomHelper.append(me.msgAlert, tpl, true);
 
+		msgBox.hide();
+		msgBox.slideIn('t');
 		msgBox.ghost('t', {delay: 3000, remove: true});
 	}
 },
